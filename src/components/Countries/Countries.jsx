@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
 
-const Countries = () => {
+const Countries = ({countriesPromise}) => {
+    
+    const countries = use(countriesPromise);
+    console.log(countries);
+
     return (
         <div>
             <h1>In the countries</h1>
